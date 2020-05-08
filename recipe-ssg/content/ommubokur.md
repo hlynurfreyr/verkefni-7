@@ -4,7 +4,7 @@ date: 2020-05-7
 tags: pancake, best
 thumbnail: img/ponnukaka.jpg
 summary: A sweet and soft cake which is very easy to prepare and tastes great with a cup of tea.
-slug: condensed-milk-cake
+slug: ponnukokur
 ---
 
 __Ingredients__
