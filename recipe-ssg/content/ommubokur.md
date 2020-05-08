@@ -9,12 +9,11 @@ slug: condensed-milk-cake
 
 __Ingredients__
 
-+ 1 can (395g) sweetened condensed milk
-+ 4 eggs
-+ 120gm all purpose flour
-+ 1/2 tblsp baking powder
-+ 50gm unsalted butter, melted and cooled
-+ Icing sugar for dusting
++ 3 egg
++ 6 dl mjólk
++ 130 gr hveiti
++ 1/2 tsk salt
++ 40 gr smjör
 
 __Preparation__
 
