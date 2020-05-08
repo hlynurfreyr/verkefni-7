@@ -17,10 +17,6 @@ __Ingredients__
 
 __Preparation__
 
-Preheat oven to 180C. Generously butter a 22cm ring cake pan.
- 
-Place all ingredients in a large bowl and mix well. Pour the batter into prepared pan and bake for 20 minutes or until a skewer comes out clean. 
- 
-Remove from oven and place on a wire rack to cool completely before unmolding.
- 
-Dust with icing sugar before serving.
+þeytið eggin og mjólkina. blandið hveiti og saltinu. stráið eggjablönduna og þeytið vel. 
+bræðið smjörið og þeytið við degið. hita pönnuna vel og setjið deigið á.
+þegar neðri hliðin brúnast á að snúa við henni með spaða.
