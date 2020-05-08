@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="css/newsite.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
+
+    <body>
+            <form>
+
+                <div class=link><h1><a href="home.html">Aftur á heimasíðu</a></h1></div>
+
+                <div class="navbar">
+                    <label for="fname">First name:</label>
+                    <input type="string" id="fname" name="fname" required placeholder="Enter a valid name">
+
+                    <label for="lname">Last name:</label>
+                    <input type="string" id="lname" name="lname">
+                </div>
+
+                <div class="header">
+                    <label for="start">Recipe Date:</label>
+                    <input type="date" id="start" name="trip-start"
+                    value="2018-07-22"
+                    min="2018-01-01" max="2021-31-12">
+                </div>
+
+                <div class=main>
+                    <p>Email Address:</p> <input type="email" name="email" required placeholder="Enter a valid email address">
+                    
+                    <p>Phone Number:</p> <input type="text" pattern="\d{7}" required placeholder="Enter a valid phone number">
+                </div>
+
+                <div class=aside>
+                    <p>veldu lýsingu</p>
+                    <input type="checkbox" id="scales" name="scales"checked>
+                    <label for="scales">Gott</label>
+                    <input type="checkbox">
+                    <label for="horns">Vont</label>
+                </div>
+
+                <div class=article>
+                    <p>Select cake or bread</p>
+                    <div>
+                        <input type="radio" id="cake" name="CorB" value="cake"
+                                checked>
+                        <label for="cake">cake</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="bread" name="CorB" value="bread">
+                        <label for="bread">bread</label>
+                    </div>
+                </div>
+                
+                <div class=form>
+                    <p>select dificulty</p>
+                    <select>
+                        <option>Easy</option>
+                        <option>Medium</option>
+                        <option>Hard</option>
+                    </select>
+                </div>
+
+                <div class=ath>
+                    <label for="athugasemdir">Athugasemdir</label>
+                    <textarea id="athugasemdir" rows="4" cols="50" class="font">
+                    </textarea>
+                </div>
+
+                <div class="footer">
+                    <input type="submit" value="Submit">
+                </div>
+
+            </form>
+    <p class="pbot"></p>
+    </body>
+    
+</html>

@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+
+{% block header %}
+
+{% include './header.html' %}
+
+{% endblock %}
+
+{% block footer %}
+
+{% include './footer.html' %}
+
+{% endblock %}
+
+{% block content %}
+
+<div>
+
+{% for post in posts %}
+
+    <div id="{{ post.title }}" >
+
+        <br>
+
+        <article  class="card col-2 border alignment">
+            <header class="padding">
+                <img class="image" src="{{ post.thumbnail }}">
+            </header>
+            <footer class="Ptop">
+                <div class="col-2">
+                    <h2>{{ post.title }}</h2>
+                    <small class="box">{{ post.date }}</small>
+                </div>
+
+                <div>
+                    <p>
+                        {{ post.summary}}
+                    </p>
+                </div>
+
+                <div class="col-2">
+                    <div>
+                        <a class="button" href="posts/{{ post.slug }}.html">Recipe</a>
+                    </div>
+                    
+                    <div>
+                        {% set list_of_tags = post.tags.split(",") %}
+                        {% for tag in list_of_tags %}
+                            <button class="">{{ tag }}</button>
+                        {% endfor %}
+                    </div>
+                </div>
+            </footer>
+            
+        </article>
+
+    </div>
+
+<!-- 
+    <p>
+            <h2>{{loop.index}}: <a href="posts/{{ post.slug }}.html">{{post.title}}</a> <small>{{post.date}}</small></h2>
+            {{post.summary}}
+        </p> -->
+
+{% endfor %}
+
+</div>
+
+{% endblock %}

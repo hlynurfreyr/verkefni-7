@@ -1,0 +1,514 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <title>My Recipes</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: auto;
+            margin-top: 5px;
+        }
+
+        .mybutton {
+            background: #f7786b;
+            font-size: 0.75em;
+        }
+    </style>
+</head>
+<body class="container">
+    
+
+<header class="header">
+    <h1>My Recipies</h1>
+    <h4>recipies for everybody</h4>
+
+    <div>
+        <svg width="366" height="384" viewBox="0 0 376 394" fill="none" xmlns="http://www.w3.org/2000/svg">
+            
+            <a xlink:href="https://www.covid.is/">
+
+            <g id="Group_1">
+                <path id="tri3blob" d="M325.123 134.06C316.022 134.06 308.978 138.112 305.944 146.134C296.894 159.246 277.725 162.279 265.631 156.212C263.626 151.173 136.63 116.927 136.63 117.955C120.525 127.006 105.408 98.777 106.396 85.665V84.687C107.413 81.654 107.413 78.62 107.413 75.587C107.413 59.492 94.312 46.38 77.179 46.38C61.033 46.38 46.944 59.482 46.944 75.587C46.944 88.698 55.994 98.777 66.073 103.816C83.246 110.87 106.385 131.027 104.38 145.156C111.435 157.24 95.33 219.715 96.317 224.754C87.257 233.855 69.106 231.809 62.061 228.816C59.038 224.754 53.011 222.749 46.944 222.749C30.799 222.749 16.71 235.85 16.71 251.955C16.71 268.101 29.811 281.212 46.944 281.212C57.022 281.212 65.085 277.151 71.112 269.118C80.212 256.017 95.33 243.923 108.441 243.923C110.447 246.916 272.676 183.454 272.676 182.436C273.704 176.369 297.871 170.342 319.056 175.381H325.123C337.207 175.381 347.285 165.303 347.285 153.229C347.285 141.095 337.207 134.05 325.113 134.05L325.123 134.06Z" fill="#982727"/>
+            </g>
+            <g id="Group_2">
+                <path id="tri4blob" d="M258.587 282.19C246.493 282.19 252.52 254.011 252.52 249.95C253.547 247.944 243.469 128.034 243.469 128.034C244.497 123.972 246.493 118.933 253.547 118.933H255.553C271.698 118.933 285.788 105.831 285.788 89.726C285.788 73.581 272.686 60.469 255.553 60.469C239.458 60.469 225.318 73.581 225.318 89.726C225.318 92.75 225.318 95.743 226.346 98.777C226.346 98.777 232.363 113.894 219.292 111.888C219.292 111.888 105.408 151.173 100.369 152.201C86.229 177.397 49.978 164.295 38.872 156.212C35.848 152.201 29.821 149.168 22.777 149.168C10.561 149.255 0.673995 159.124 0.563995 171.34C1.592 182.436 11.67 192.514 23.764 192.514C27.826 192.514 32.865 191.486 35.858 189.491C53.999 180.42 87.267 186.447 91.288 202.592V203.62C92.296 206.603 115.476 252.983 118.51 256.994C133.627 285.223 96.297 296.33 96.297 296.33C86.219 296.33 77.169 305.38 77.169 316.486C77.169 328.57 87.247 338.648 99.341 338.648C111.414 338.648 121.493 328.57 121.493 316.476C124.526 293.296 136.61 278.179 158.822 277.151C161.806 278.179 216.258 274.168 220.269 273.14C236.415 276.163 227.324 289.285 227.324 311.437C227.324 327.542 240.426 340.664 257.559 340.664C273.694 340.664 287.793 327.542 287.793 311.437C288.811 295.312 275.699 282.19 258.577 282.19H258.587Z" fill="#982727"/>
+            </g>
+            <g id="Group_3">
+                <path id="t3blob" d="M206.18 278.179C209.224 272.112 198.117 270.116 189.067 270.116C179.966 270.116 170.916 275.155 172.922 281.202C197.089 317.464 178.989 322.503 167.883 329.598C158.832 333.609 152.765 344.715 152.765 354.793C152.765 370.888 165.867 384 183 384C200.133 384 213.235 370.898 213.235 354.793C214.263 326.564 196.102 287.229 206.18 278.179ZM333.145 221.721C327.128 221.721 321.061 222.749 317.05 225.782C298.899 232.827 282.754 219.715 270.67 211.642C264.654 207.631 257.569 217.71 255.553 220.743C253.547 223.767 250.514 237.866 262.608 237.866C282.764 230.811 307.96 266.085 307.96 266.085C312.011 276.163 323.077 282.19 335.201 282.19C351.296 282.19 365.436 269.129 365.436 252.983C362.402 234.842 349.29 221.721 333.145 221.721ZM156.776 46.38C175.955 85.665 174.927 100.782 163.872 104.834C154.771 111.888 169.888 120.939 180.994 118.943C192.05 116.927 202.128 111.888 195.084 101.81C177.961 71.575 200.123 51.419 200.123 51.419C207.178 47.408 212.217 38.317 212.217 29.247C212.217 13.122 199.145 0 181.982 0C164.849 0 151.747 13.112 151.747 29.257C151.747 33.268 152.765 38.307 154.771 42.359C154.771 45.352 154.771 45.352 156.787 46.38H156.776Z" fill="#982727"/>
+                </g>
+            <g id="Group_4">
+                <path id="mainball" d="M273.704 192.514C273.704 242.593 233.079 283.218 183 283.218C132.921 283.218 92.296 242.593 92.296 192.514C92.296 142.435 132.921 101.81 183 101.81C233.079 101.81 273.704 142.435 273.704 192.514Z" fill="#000000"/>
+                <path id="big" d="M166.855 192.514C150.76 192.514 136.62 179.412 136.62 163.307C136.62 147.162 149.732 134.05 166.855 134.05C184.028 134.05 197.089 147.162 197.089 163.307C197.089 179.402 184.028 192.514 166.855 192.514Z" fill="#FFFFFF"/>
+                <path id="small" d="M151.737 236.838C142.687 236.838 136.62 230.821 136.62 221.721C136.62 212.67 142.687 206.603 151.737 206.603C160.838 206.603 166.855 212.67 166.855 221.721C166.855 230.821 160.838 236.838 151.737 236.838Z" fill="#893C3C"/>
+                <path id="medium" d="M205.172 252.983C193.078 252.983 183 242.905 183 230.811C183 218.737 193.078 208.659 205.172 208.659C217.246 208.659 227.324 218.737 227.324 230.821C227.324 242.905 217.246 252.983 205.162 252.983H205.172Z" fill="#565353"/>
+            </g>
+            </a>
+        </svg>
+    </div>
+
+</header>
+<nav class="navbar">
+    
+        <a class="box" href="#Pönnukökurnar hennar ömmu">Pönnukökurnar hennar ömmu</a>
+    
+        <a class="box" href="#Faux French Bread">Faux French Bread</a>
+    
+        <a class="box" href="#Sweetened Condensed Milk Cake">Sweetened Condensed Milk Cake</a>
+    
+        <a class="box" href="#Old Fashioned Doughnuts">Old Fashioned Doughnuts</a>
+    
+        <a class="box" href="#Naan Bread">Naan Bread</a>
+    
+        <a class="box" href="#Turkish Cheese Pide">Turkish Cheese Pide</a>
+    
+        <a class="box" href="#Lionhouse Dinner Rolls">Lionhouse Dinner Rolls</a>
+    
+        <a class="box" href="#Honey Challah">Honey Challah</a>
+    
+</nav>
+
+
+    <br>
+    
+
+<div>
+
+
+
+    <div id="Pönnukökurnar hennar ömmu" >
+
+        <br>
+
+        <article  class="card col-2 border alignment">
+            <header class="padding">
+                <img class="image" src="img/cond-milk-cake.jpg">
+            </header>
+            <footer class="Ptop">
+                <div class="col-2">
+                    <h2>Pönnukökurnar hennar ömmu</h2>
+                    <small class="box">2020-05-7</small>
+                </div>
+
+                <div>
+                    <p>
+                        A sweet and soft cake which is very easy to prepare and tastes great with a cup of tea.
+                    </p>
+                </div>
+
+                <div class="col-2">
+                    <div>
+                        <a class="button" href="posts/condensed-milk-cake.html">Recipe</a>
+                    </div>
+                    
+                    <div>
+                        
+                        
+                            <button class="">pancake</button>
+                        
+                            <button class=""> best</button>
+                        
+                    </div>
+                </div>
+            </footer>
+            
+        </article>
+
+    </div>
+
+<!-- 
+    <p>
+            <h2>1: <a href="posts/condensed-milk-cake.html">Pönnukökurnar hennar ömmu</a> <small>2020-05-7</small></h2>
+            A sweet and soft cake which is very easy to prepare and tastes great with a cup of tea.
+        </p> -->
+
+
+
+    <div id="Faux French Bread" >
+
+        <br>
+
+        <article  class="card col-2 border alignment">
+            <header class="padding">
+                <img class="image" src="img/bread.jpg">
+            </header>
+            <footer class="Ptop">
+                <div class="col-2">
+                    <h2>Faux French Bread</h2>
+                    <small class="box">2019-04-17</small>
+                </div>
+
+                <div>
+                    <p>
+                        Not quite french bread which has great taste and stays fresh for longer.
+                    </p>
+                </div>
+
+                <div class="col-2">
+                    <div>
+                        <a class="button" href="posts/french-bread.html">Recipe</a>
+                    </div>
+                    
+                    <div>
+                        
+                        
+                            <button class="">Bread</button>
+                        
+                    </div>
+                </div>
+            </footer>
+            
+        </article>
+
+    </div>
+
+<!-- 
+    <p>
+            <h2>2: <a href="posts/french-bread.html">Faux French Bread</a> <small>2019-04-17</small></h2>
+            Not quite french bread which has great taste and stays fresh for longer.
+        </p> -->
+
+
+
+    <div id="Sweetened Condensed Milk Cake" >
+
+        <br>
+
+        <article  class="card col-2 border alignment">
+            <header class="padding">
+                <img class="image" src="img/cond-milk-cake.jpg">
+            </header>
+            <footer class="Ptop">
+                <div class="col-2">
+                    <h2>Sweetened Condensed Milk Cake</h2>
+                    <small class="box">2019-04-15</small>
+                </div>
+
+                <div>
+                    <p>
+                        A sweet and soft cake which is very easy to prepare and tastes great with a cup of tea.
+                    </p>
+                </div>
+
+                <div class="col-2">
+                    <div>
+                        <a class="button" href="posts/condensed-milk-cake.html">Recipe</a>
+                    </div>
+                    
+                    <div>
+                        
+                        
+                            <button class="">Cake</button>
+                        
+                            <button class=""> Sweet</button>
+                        
+                    </div>
+                </div>
+            </footer>
+            
+        </article>
+
+    </div>
+
+<!-- 
+    <p>
+            <h2>3: <a href="posts/condensed-milk-cake.html">Sweetened Condensed Milk Cake</a> <small>2019-04-15</small></h2>
+            A sweet and soft cake which is very easy to prepare and tastes great with a cup of tea.
+        </p> -->
+
+
+
+    <div id="Old Fashioned Doughnuts" >
+
+        <br>
+
+        <article  class="card col-2 border alignment">
+            <header class="padding">
+                <img class="image" src="img/doughnuts.jpg">
+            </header>
+            <footer class="Ptop">
+                <div class="col-2">
+                    <h2>Old Fashioned Doughnuts</h2>
+                    <small class="box">2019-04-14</small>
+                </div>
+
+                <div>
+                    <p>
+                        Old fashioned sugar dusted doughnuts. Better than any store bought doughnuts.
+                    </p>
+                </div>
+
+                <div class="col-2">
+                    <div>
+                        <a class="button" href="posts/doughnuts.html">Recipe</a>
+                    </div>
+                    
+                    <div>
+                        
+                        
+                            <button class="">Sweet</button>
+                        
+                    </div>
+                </div>
+            </footer>
+            
+        </article>
+
+    </div>
+
+<!-- 
+    <p>
+            <h2>4: <a href="posts/doughnuts.html">Old Fashioned Doughnuts</a> <small>2019-04-14</small></h2>
+            Old fashioned sugar dusted doughnuts. Better than any store bought doughnuts.
+        </p> -->
+
+
+
+    <div id="Naan Bread" >
+
+        <br>
+
+        <article  class="card col-2 border alignment">
+            <header class="padding">
+                <img class="image" src="img/naan.jpg">
+            </header>
+            <footer class="Ptop">
+                <div class="col-2">
+                    <h2>Naan Bread</h2>
+                    <small class="box">2019-04-13</small>
+                </div>
+
+                <div>
+                    <p>
+                        Soft and fluffy home made naan bread which doesn't need you to fire up the oven. Great with curries or tear chunks and dunk in honey butter.
+                    </p>
+                </div>
+
+                <div class="col-2">
+                    <div>
+                        <a class="button" href="posts/naan.html">Recipe</a>
+                    </div>
+                    
+                    <div>
+                        
+                        
+                            <button class="">Bread</button>
+                        
+                    </div>
+                </div>
+            </footer>
+            
+        </article>
+
+    </div>
+
+<!-- 
+    <p>
+            <h2>5: <a href="posts/naan.html">Naan Bread</a> <small>2019-04-13</small></h2>
+            Soft and fluffy home made naan bread which doesn't need you to fire up the oven. Great with curries or tear chunks and dunk in honey butter.
+        </p> -->
+
+
+
+    <div id="Turkish Cheese Pide" >
+
+        <br>
+
+        <article  class="card col-2 border alignment">
+            <header class="padding">
+                <img class="image" src="img/pide.jpg">
+            </header>
+            <footer class="Ptop">
+                <div class="col-2">
+                    <h2>Turkish Cheese Pide</h2>
+                    <small class="box">2019-04-12</small>
+                </div>
+
+                <div>
+                    <p>
+                        Traditional Turkish pide stuffed with cheese. Great as an appetizer or for breakfast or lunch.
+                    </p>
+                </div>
+
+                <div class="col-2">
+                    <div>
+                        <a class="button" href="posts/turkish-pide.html">Recipe</a>
+                    </div>
+                    
+                    <div>
+                        
+                        
+                            <button class="">Bread</button>
+                        
+                            <button class=""> Savoury</button>
+                        
+                    </div>
+                </div>
+            </footer>
+            
+        </article>
+
+    </div>
+
+<!-- 
+    <p>
+            <h2>6: <a href="posts/turkish-pide.html">Turkish Cheese Pide</a> <small>2019-04-12</small></h2>
+            Traditional Turkish pide stuffed with cheese. Great as an appetizer or for breakfast or lunch.
+        </p> -->
+
+
+
+    <div id="Lionhouse Dinner Rolls" >
+
+        <br>
+
+        <article  class="card col-2 border alignment">
+            <header class="padding">
+                <img class="image" src="img/rolls.jpg">
+            </header>
+            <footer class="Ptop">
+                <div class="col-2">
+                    <h2>Lionhouse Dinner Rolls</h2>
+                    <small class="box">2019-04-11</small>
+                </div>
+
+                <div>
+                    <p>
+                        Soft and fluffy dinner rolls. Great as a side or in breakfast with coffee.
+                    </p>
+                </div>
+
+                <div class="col-2">
+                    <div>
+                        <a class="button" href="posts/lionhouse-rolls.html">Recipe</a>
+                    </div>
+                    
+                    <div>
+                        
+                        
+                            <button class="">Bread</button>
+                        
+                    </div>
+                </div>
+            </footer>
+            
+        </article>
+
+    </div>
+
+<!-- 
+    <p>
+            <h2>7: <a href="posts/lionhouse-rolls.html">Lionhouse Dinner Rolls</a> <small>2019-04-11</small></h2>
+            Soft and fluffy dinner rolls. Great as a side or in breakfast with coffee.
+        </p> -->
+
+
+
+    <div id="Honey Challah" >
+
+        <br>
+
+        <article  class="card col-2 border alignment">
+            <header class="padding">
+                <img class="image" src="img/challah.jpg">
+            </header>
+            <footer class="Ptop">
+                <div class="col-2">
+                    <h2>Honey Challah</h2>
+                    <small class="box">2019-04-10</small>
+                </div>
+
+                <div>
+                    <p>
+                        A soft and sweet traditional bread infused with honey flavour.
+                    </p>
+                </div>
+
+                <div class="col-2">
+                    <div>
+                        <a class="button" href="posts/honey-challah.html">Recipe</a>
+                    </div>
+                    
+                    <div>
+                        
+                        
+                            <button class="">Bread</button>
+                        
+                            <button class=""> Sweet</button>
+                        
+                    </div>
+                </div>
+            </footer>
+            
+        </article>
+
+    </div>
+
+<!-- 
+    <p>
+            <h2>8: <a href="posts/honey-challah.html">Honey Challah</a> <small>2019-04-10</small></h2>
+            A soft and sweet traditional bread infused with honey flavour.
+        </p> -->
+
+
+
+</div>
+
+
+    <br>
+    
+
+<footer class="footer">
+
+    <table class="BW">
+    
+    <button class=""><a href="newsite.html">New Post</a></button>
+
+        <tr>
+            <div class=col-3>
+                <h4>dificulty</h4>
+                <h4>cake</h4>
+                <h4>bread</h4>
+            </div>
+            <td> <h3>Easy</h3> </td>
+            <td> <a href="">pancake</a> </td>
+            <td> <a href="">goodbread</a> </td>
+        </tr>
+        <tr>
+            <td> <h3>Medium</h3> </td>
+            <td> <a href="">dirtcake</a> </td>
+            <td> <a href="">bestbread</a> </td>
+        </tr>
+        <tr>
+            <td> <h3>Hard</h3> </td>
+            <td> <a href="">sandcake</a> </td>
+            <td> <a href="">THEbread</a> </td>
+        </tr>
+    </table>
+
+
+
+    <p>&copy; 2020 hlynur.2002@gmail.com</p>
+
+
+    <svg width="366" height="384" viewBox="0 0 376 394" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="Group 1">
+        <line id="mouth" x1="0.00381668" y1="69.5" x2="131.004" y2="70.5" stroke="black"/>
+        <circle id="eyer" cx="108.5" cy="22.5" r="22.5" fill="#438C46"/>
+        <circle id="eyel" cx="22.5" cy="22.5" r="22.5" fill="#438C46"/>
+        <circle id="eyesl" cx="22.5" cy="22.5" r="11.5" fill="black"/>
+        <circle id="eyesr" cx="108.5" cy="22.5" r="11.5" fill="black"/>
+        </g>
+    </svg> 
+
+</footer>
+
+
+</body>
+</html>
