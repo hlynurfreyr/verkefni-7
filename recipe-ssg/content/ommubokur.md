@@ -19,4 +19,4 @@ __Preparation__
 
 þeytið eggin og mjólkina. blandið hveiti og saltinu. stráið eggjablönduna og þeytið vel. 
 bræðið smjörið og þeytið við degið. hita pönnuna vel og setjið deigið á.
-þegar neðri hliðin brúnast á að snúa við henni með spaða.
+þegar neðri hliðin brúnast á að snúa við henni með spaða. 
